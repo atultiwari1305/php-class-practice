@@ -6,8 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-
-
     <form action="" method="post">
         <label for="name" name="num1"></label>
         Enter First Number: <input type="number" name="num1" id="num1"/> <br>
@@ -17,11 +15,10 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Retrieve the input values
+        
         $num1 = $_POST['num1'];
         $num2 = $_POST['num2'];
 
-        // Calculate the sum
         $sum = $num1 + $num2;
 
        
